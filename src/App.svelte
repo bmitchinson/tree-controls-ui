@@ -1,17 +1,28 @@
 <script lang="ts">
   export let name: string;
+  import Livestream from "./Livestream.svelte";
 </script>
 
 <main>
-  <h1>{name}</h1>
+  <div id="center-col">
+    <h1>{name}</h1>
+    <Livestream />
+  </div>
 </main>
 
 <style>
   main {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
+  }
+
+  #center-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h1 {
