@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  <div id="center-col">
+  <div id="center-vert">
     <Livestream />
   </div>
 </main>
@@ -12,14 +12,13 @@
   main {
     display: flex;
     justify-content: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
   }
 
-  #center-col {
+  #center-vert {
     display: flex;
-    flex-direction: column;
+    align-content: space-between;
     align-items: center;
   }
 </style>
